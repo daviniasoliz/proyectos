@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+
+    background-color: #161013;
+    background-image: url("./imayes/topography.svg");
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+
+    background-color: #161013;
+    background-image: url("./imayes/topography.svg");
+}
+
+.logo-section .logo {
+    height: 50px;
+}
+
+.title-section h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #f1eded;
+}
+
+.title-section p {
+    font-size: 1em;
+    color: #e9e3e3;
+}
+
+.details-section {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px;
+}
+
+.main-content .news-author{
+    margin: 70px;
+}
+.news-block {
+    width: 70%;
+    background-color: #000000;
+    color: white;
+    background-color: #161013;
+    background-image: url("./imayes/topography.svg");
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.news-block h2 {
+    font-size: 1.5em;
+    color: #f1eded;
+    text-align: center;
+}
+
+.news-content {
+    display: flex;
+    gap: 15px;
+}
+
+.news-image {
+    width: 50%;
+    height: 450px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+
+.news-text {
+    width: 50%;
+    text-align: center;
+    margin: 30px;
+    
+}
+
+.sidebar {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-item {
+    background-color: #000000;
+    color: white;
+    background-color: #161013;
+    background-image: url("./imayes/topography.svg");
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.sidebar-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+
+    background-color: #161013;
+    background-image: url("./imayes/topography.svg");
+    border-top: 2px solid #ddd;
+}
+
+.footer-block {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-block p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #fcfcfc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-block, .sidebar {
+        width: 100%;
+    }
+
+    .news-content {
+        flex-direction: column;
+    }
+
+    .news-image, .news-text {
+        width: 100%;
+    }
+
+    .footer-block {
+        width: 90%;
+    }
+}
